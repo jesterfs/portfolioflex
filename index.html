@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Stewart Jester</title>
+    <!-- link to normalize -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <!-- link to style sheet -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <!-- container to contain logo and nav links -->
+      <div class="container">
+        <div class="logo">
+          <h1>Stewart Jester</h1>
+        </div>
+        <nav>
+      <!-- not 100% sure why these have to be list items, but i was struggling to
+    get them horizontal, and this is how the tutorial did it -->
+          <ul>
+            <!-- links each to the section through their id tag -->
+            <li><a href="#home">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </header>
+    <main>
+      <div class="wrapper">
+        <div class="group home" id="home">
+          <div class="item">
+            <img class="profile" src="images/stewart.jpeg" alt="picture of Stewart Jester">
+          </div>
+          <div class="item intro">
+            <h2 class="introtitle">Hello!</h2>
+            <p class="introtext">My name is Stewart, and I am a web developer and content coordinator based out of Los Angeles. I have four years of copywriting and web content experience, with an emphasis on HTML, CSS, and JavaScript.</p>
+            <p class="introtext">I have a background in digital marketing and SEO, so not only can I build your website, but I can also help you craft the content that drives traffic.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <hr>
+
+      <div class="wrapper">
+        <h2 class="sectionheader">Portfolio</h2>
+        <div class="group portfolio boxsection" id="portfolio">
+          <div class="item samplebox">
+            <!-- <h3 class="sampletitle">Copywriting</h3> -->
+            <ul class="sampletext">
+              <li><h3>Copywriting</h3></li>
+              <br>
+              <!-- link that opens in new tab -->
+              <li> <a href="https://www.youtopiasnacks.com/pages/blog" target="_blank" class="bodylinks">Youtopia</a> </li>
+              <br>
+              <!-- place holders because these sites i linked to on old portfolio have since gone down -->
+              <li><a href="#" target="_blank" class="bodylinks">Shredded Core</a></li>
+              <br>
+              <li><a href="#" target="_blank" class="bodylinks">Ben Riojas Consulting</a></li>
+            </ul>
+          </div>
+          <vl></vl>
+          <div class="item samplebox">
+
+            <ul class="sampletext">
+              <li><h3>Content Management</h3></li>
+              <br>
+              <li> <a href="https://www.nailedshvt.com/" class="bodylinks">Nailed Shvt</a> </li>
+              <br>
+              <li><a href="#" target="_blank" class="bodylinks">ZipRecruiter</a></li>
+              <br>
+              <li><a href="#" target="_blank" class="bodylinks">StopWrex</a></li>
+            </ul>
+          </div>
+          <div class="item samplebox">
+            <!-- <h3 class="sampletitle">Web Development</h3> -->
+            <ul class="sampletext">
+              <li><h3>Web Development</h3></li>
+              <br>
+              <li><a href="https://www.nailedshvt.com/" class="bodylinks ">Nailed Shvt</a></li>
+              <br>
+              <li><a href="#" target="_blank" class="bodylinks">Placeholder</a></li>
+              <br>
+              <li><a href="#" target="_blank" class="bodylinks">Placeholder</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+<!--Web dev samples -->
+      <div class="wrapper">
+        <h3 class="sectionheader">Web Development Samples</h3>
+        <div class="group webdevsamples" id="portfolio">
+          <!-- box 1 -->
+          <div class="item webdevbox">
+            <a  href="images/port-screen-full.png" target="_blank"><img class="sampleimage" src="images/port-screen-crop.png" alt="thumbnail of a website"></a>
+            <div class="webdevtext">
+              <p> <strong>Stewart Jester's Portfolio</strong> </p>
+              <p>A web development and content management portfolio page.</p>
+              <br>
+              <p> <strong>Skills Used</strong> </p>
+              <p>HTML</p>
+              <p>CSS</p>
+              <br>
+              <br>
+              <p> <a class="bodylinks" href="https://jesterfs.github.io/StewartJester/">Live Site</a> </p>
+              <p> <a class="bodylinks" href="https://github.com/jesterfs/StewartJester">Github</a> </p>
+            </div>
+          </div>
+          <!-- box 2 -->
+          <div class="item webdevbox">
+            <a  href="images/mockup.jpg" target="_blank"><img class="sampleimage" src="images/mockup.jpg" alt="thumbnail of a website"></a>
+            <div class="webdevtext">
+              <p> <strong>Lorem</strong> </p>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <br>
+              <p> <strong>Skills Used</strong> </p>
+              <p>HTML</p>
+              <p>CSS</p>
+              <p>JavaScript</p>
+              <br>
+              <p> <a class="bodylinks" href="#">Live Site</a> </p>
+              <p> <a class="bodylinks" href="#">Github</a> </p>
+            </div>
+          </div>
+          <!-- box 3 -->
+          <div class="item webdevbox">
+            <a  href="images/mockup.jpg" target="_blank"><img class="sampleimage" src="images/mockup.jpg" alt="thumbnail of a website"></a>
+            <div class="webdevtext">
+              <p> <strong>Lorem</strong> </p>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <br>
+              <p> <strong>Skills Used</strong> </p>
+              <p>HTML</p>
+              <p>CSS</p>
+              <p>JavaScript</p>
+              <br>
+              <p> <a class="bodylinks" href="#">Live Site</a> </p>
+              <p> <a class="bodylinks" href="#">Github</a> </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <div class="wrapper services" id="services">
+        <h2 class="sectionheader">Services</h2>
+        <div class="group portfolio boxsection" id="portfolio">
+          <div class="item samplebox servicebox">
+            <!-- <h3 class="sampletitle">Copywriting</h3> -->
+            <ul class="sampletext">
+              <li> <strong>Digital Marketing Strategy</strong></li>
+              <br>
+              <li>Write seo-driven content</li>
+              <br>
+              <li>Develop an SEO content strategy</li>
+              <br>
+              <li>Revamp and manage social media presence</li>
+            </ul>
+          </div>
+          <vl></vl>
+          <div class="item samplebox servicebox">
+
+            <ul class="sampletext">
+              <li><strong>Copy Service</strong></li>
+              <br>
+              <li>Create blog, webpage, or social media copy</li>
+              <br>
+              <li>Edit and polish technical copy</li>
+              <br>
+              <li>Write and polish marketing materials</li>
+            </ul>
+          </div>
+          <div class="item samplebox servicebox">
+            <!-- <h3 class="sampletitle">Web Development</h3> -->
+            <ul class="sampletext">
+              <li><strong>Web Service</strong></li>
+              <br>
+              <li>Create custom webpages</li>
+              <br>
+              <li>Develop and manage company blogs</li>
+              <br>
+              <li>Debug HTML, CSS, and Javascript webpages</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <hr>
+<!-- about me section -->
+      <div class="wrapper">
+        <h2 class="sectionheader">About Me</h2>
+        <div class="group about" id="about">
+          <div class="item">
+            <p class="abouttext">There's nothing more satisfying than building a website and watching your code come to life in the browser. Every project is a test of your problem-solving abilities, and I would love to bring my problem-solving skills onto a a team of programmers/</p>
+            <p class="abouttext">In addition to my experience with web content and development, I also have a background in digital marketing, and I hold an MA in American literature.</p>
+            <p class="abouttext">In my free time, I like to rock climb and ride bikes, and I am passionate about urban infrastructure and liveable streets.</p>
+          </div>
+        </div>
+
+
+      </div>
+
+      <hr>
+
+      <div class="contact" id="contact">
+          <h2 class="sectionheader">Get In Touch</h2>
+          <p class="emailpara">You can email me directly at <a class="emaillink bodylinks" href="mailto:jesterstewart@gmail.com">jesterstewart@gmail.com</a> or fill out the form below.</p>
+          <!-- set this first div up so I could set the color -->
+          <div class="contactform">
+            <!-- this form element sets up the mailto function and opens up their email app, with the body
+          populated with the answers from the form -->
+            <form target="_blank" class="" action="mailto:jesterstewart@gmail.com" method="post" enctype= "text/plain">
+          <!-- used the class entries so i could keep it one label/field combo per line -->
+              <div class="entries">
+                <label class="inputlabel firstlabel" for="name">Name</label>
+                <!-- creates an emply field with a grayed out place holder-->
+                <input class="inputfield inputs" type="text" id="name" name="name" placeholder="Your name...">
+              </div>
+              <div class="entries">
+                <label class="inputlabel inputs" for="email">Email</label>
+                <input class="inputfield inputs" type="text" id="email" name="email" placeholder="Your email...">
+              </div>
+              <div class="entries">
+                <label class="inputlabel inputs" for="phone">Phone</label>
+                <input class="inputfield inputs" type="text" id="phone" name="phone" placeholder="(xxx)-xxx-xxxx">
+              </div>
+              <div class="entries">
+                <!-- left this empty label here for spacing purposes -->
+                <!-- <label class="inputlabel inputs" for="contactmethod"></label> -->
+                <!-- creates a pulldown menu -->
+                <select name="Contact Method" class="inputlabel inputs contactmethod">
+                  <option value="contactmethod">Preferred Contact Method</option>
+                  <option value="email">Email</option>
+                  <option value="phone">Phone</option>
+                  <option value="textmessage">Text Message</option>
+                </select>
+              </div>
+              <div class="entries">
+                <label class="inputlabel inputs" for="message">Message</label>
+                <!-- creates a larger text field instead of a small field. -->
+                <textarea class="inputfield inputs message"  id="message" name="message" placeholder="A quick rundown of the project..."></textarea>
+              </div>
+              <div class="entries">
+                <!-- the submit button that finally opens their mail app with their info -->
+                <input class="submitbutton" type="submit" name="" value="Submit">
+              </div>
+            </form>
+          </div>
+      </div>
+
+    </main>
+    <footer>
+      <div class="wrapper">
+        <div class="footergroup group">
+          <div class="item socialbox">
+            <h3 class="footertitle">Social</h3>
+            <!-- these open my social media in a seperate tab -->
+            <p class="footerlist"><a href="https://www.linkedin.com/in/stewart-jester-77a269b8/" target="_blank">LinkedIn</a></p>
+            <p class="footerlist"> <a href="https://github.com/jesterfs" target="_blank">Github</a> </p>
+            <p class="footerlist"> <a href="https://twitter.com/fsjester" target="_blank">Twitter</a> </p>
+            <p class="footerlist"> <a href="mailto:jesterstewart@gmail.com" target="_blank">Email</a> </p>
+          </div>
+
+          <div class="item navbox">
+            <h3 class="footertitle">Navigation</h3>
+            <p class="footerlist"><a href="#home">Home</a></p>
+            <p class="footerlist"><a href="#portfolio">Portfolio</a></p>
+            <p class="footerlist"><a href="#services">Services</a></p>
+            <p class="footerlist"><a href="#about">About</a></p>
+            <p class="footerlist"><a href="#contact">Contact</a></p>
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </footer>
+  </body>
+</html>

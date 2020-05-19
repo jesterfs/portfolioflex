@@ -1,0 +1,437 @@
+/* styles for flex box */
+.group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+@media all and (min-width: 800px) {
+  .group {
+    flex-direction: row;
+  }
+  .wrapper {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+  margin: 10px;
+}
+
+.group img {
+  width: 100%;
+}
+/* ------------------------ */
+/* STLYLES FOR WHOLE DOCUMENT */
+/* ------------------------- */
+/* styling the links */
+a {
+  text-decoration: none;
+}
+a:link {color:white;}
+a:visited {color:white;}
+a:hover {color:gray;}
+a:active {color:black;}
+
+/* seperate styling for footer/header links and main bodylinks */
+a.bodylinks {text-decoration: underline;}
+a.bodylinks:link {color: black;}
+a.bodylinks:visited {color:gray;}
+a.bodylinks:hover {color:red;}
+a.bodylinks:active {color:black;}
+
+/* styling for the headings on each section */
+.sectionheader {
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* styles for page breaks
+*/
+hr {
+margin-top: 50px;
+/* makes it so only a single side of the border has a style, so it's one line */
+border-style: dotted none none none;
+border-color: black;
+height: 0px;
+border-width: 5px;
+/* makes it a small line of dots instead of a full width */
+width: 10%;
+}
+
+/* ================================ */
+/* style for header/nav */
+/* ---------------------------------- */
+/* setting header background to black and fixing it so it scrolls with the user */
+header {
+  background-color: black;
+  position: fixed;
+  width: 100%;
+}
+
+/* container for logo and navbar. overflow keeps content in the section and clear keeps things from being
+to close together */
+.container{
+  clear:both;
+  overflow:auto;
+}
+
+/* floats navbar to the right and sets up a little padding */
+nav{
+  margin-left: 0%;
+  padding-right: 2%;
+}
+
+/* same but on the oppostie side */
+.logo{
+  /* float:left; */
+  color: white;
+  padding-left: 10%;
+}
+
+@media all and (min-width: 800px){
+  nav {
+    float: right;
+  }
+
+  .logo {
+    float: left;
+    padding-left: 2%;
+  }
+}
+
+
+
+/* makes it so navbar links don't take up the whole line so they van be horizontal */
+ul li{
+  display: inline-block;
+  padding:10px;
+  font-size:20px;
+}
+
+
+/* styling for home */
+.home {
+}
+
+.profile {
+  border-radius: 50%;
+  /* width: 25%; */
+  margin-top: 120px;
+  margin-left: auto;
+}
+
+.intro {
+  margin-right: 10%;
+  margin-left: 10%;
+  /* width: 40%; */
+  padding-top: 15px;
+  float: right;
+}
+
+@media all and (min-width: 800px) {
+  .intro {
+    margin-right: auto;
+    margin-left: 100px;
+    /* width: 40%; */
+    padding-top: 110px;
+    float: right;
+  }
+}
+
+
+
+
+.introtitle {
+  font-size: 45px;
+}
+
+.introtext {
+  font-size: 25px;
+}
+/* --------------- */
+/* portfolio */
+/* --------------- */
+
+.portfolio {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.boxsection {
+  text-align: center;
+}
+/* makes the boxes all take up the same width, used percentages so it is slightly responsive */
+
+.samplebox {
+  width: 100%;
+  /* border-style: solid; */
+  /* border-color: black; */
+  text-align: left;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: 15%;
+  /* display:inline-block; */
+}
+
+@media all and (min-width: 800px){
+  .samplebox {
+    width: 100%;
+    /* border-style: solid; */
+    /* border-color: black; */
+    text-align: left;
+    margin-top: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+    /* display:inline-block; */
+  }
+}
+
+.servicebox {
+  margin-left: 10%;
+}
+
+@media all and (min-width: 800px) {
+  .servicebox {
+    margin-left: 10px;
+  }
+}
+
+.sampletitle {
+  text-align: center;
+}
+
+.sampletext {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.webdevtext {
+  margin-left: 20%;
+  margin-right: auto;
+}
+
+.webdevbox {
+  width: 100%;
+  /* border-style: solid; */
+  /* border-color: black; */
+  text-align: left;
+  margin-top: 30px;
+  margin-right: 10px;
+  margin-left: 10px;
+  /* display:inline-block; */
+}
+
+/* styling for about me */
+/* -------- */
+.about {
+  width: 75%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.abouttext {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 25px;
+}
+
+/* contact page */
+
+.emailpara {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+.contact {
+  margin-bottom: 50px;
+}
+
+/* makes the form only take up half the page, and margins on auto center it */
+.contactform {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: #D3D3D3;
+  margin-top: 50px;
+  padding-top: 30px;
+}
+
+@media all and (min-width:800px) {
+  .contactform {
+    width: 50%;
+    text-align: left;
+  }
+}
+
+/* makes it so each label/field combo take up the full line */
+.entries {
+  width: 100%;
+}
+
+.inputs {
+
+  margin-top: 10px;
+}
+
+.firstlabel {
+  margin-top: 30px;
+}
+
+.inputlabel {
+  margin-left: auto;
+
+}
+
+.inputfield {
+  /* margin-left: auto; */
+  margin-right: 30%;
+  width: 60%;
+  margin-bottom: 10px;
+  /* margin-right: auto; */
+}
+
+
+@media all and (min-width: 800px) {
+  .inputs {
+    margin-top: 30px;
+  }
+  .inputlabel {
+    margin-left: 60px;
+  }
+  .inputfield {
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: 50%;
+    width: 60%;
+    /* margin-right: auto; */
+  }
+
+}
+
+
+
+
+/* makes the fields longer */
+.inputfield {
+  margin-left: 50px;
+  width: 60%;
+  /* margin-right: auto; */
+}
+
+.contactmethod {
+  margin-left: 50px;
+}
+
+@media all and (min-width: 800px) {
+  .contactmethod {
+    margin-left: 155px;
+
+  }
+}
+
+
+.message {
+  height: 200px;
+  margin-left: 45px;
+}
+
+@media all and (min-width: 800px) {
+  .message {
+    margin-left: 35px;
+    margin-bottom: 0px;
+  }
+
+}
+
+
+.submitbutton {
+  margin-top: 30px;
+  margin-left: 50%;
+  margin-right: 50%;
+  margin-bottom: 30px;
+}
+
+
+/* footer */
+/* ------- */
+
+/* line height just spaces things out */
+footer {
+  background-color: black;
+  color: white;
+  line-height: 4px;
+
+}
+
+/* next few sets of rules were to make the two menus stay on the opposite side of eachother */
+.footersections {
+  text-align: center;
+  overflow: hidden;
+  width: 90%;
+  margin-right: 25%;
+  margin-left: 25%;
+}
+
+.footerbox {
+  margin-top: 10px;
+}
+
+.footerwrap {
+  margin-left: 25%;
+  margin-right: 20%;
+  background-color: black;
+
+}
+
+.footergroup {
+  background-color: black;
+  margin: 0;
+  flex-direction: row;
+
+}
+
+@media all and (min-width: 800px) {
+  .socialbox {
+    margin-left: 20%;
+  }
+  .navbox {
+    margin-right: 20%;
+    margin-left: 45%;
+  }
+  .midbox {
+    width: 100px;
+  }
+}
+
+.navbox {
+  /* float: left; */
+}
+
+/* wanted these underline as headings and had to change them to Montserrat */
+.footertitle {
+  text-decoration: underline;
+  margin-bottom: 25px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footerlist {
+  font-size: 15px;
+}
+
+
+.copyright {
+  text-align: center;
+  padding-bottom: 10px;
+}
