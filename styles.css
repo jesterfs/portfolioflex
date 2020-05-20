@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat&display=swap');
+
+
+/* setting up fonts for the whole page */
+h1, h2, h3 {
+  font-family:  'Courgette', cursive;
+}
+p, h4, h5, a {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
 /* styles for flex box */
 .group {
   display: flex;
@@ -83,6 +95,7 @@ header {
   background-color: black;
   position: fixed;
   width: 100%;
+
 }
 
 /* container for logo and navbar. overflow keeps content in the section and clear keeps things from being
@@ -133,8 +146,12 @@ ul li{
 .profile {
   border-radius: 50%;
   /* width: 25%; */
-  margin-top: 120px;
+  margin-top: 150px;
   margin-left: auto;
+}
+
+@media all and (min-width:800px) {
+  .profile {margin-top: 120px;}
 }
 
 .intro {
